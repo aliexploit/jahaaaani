@@ -17,16 +17,16 @@
  */
 require 'puc/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/user-name/repo-name/',
+	'https://github.com/aliexploit/',
 	__FILE__,
-	'unique-plugin-or-theme-slug'
+	'rocket'
 );
 
 //Set the branch that contains the stable release.
-$myUpdateChecker->setBranch('stable-branch-name');
+$myUpdateChecker->setBranch('main');
 
 //Optional: If you're using a private repository, specify the access token like this:
-$myUpdateChecker->setAuthentication('your-token-here');
+$myUpdateChecker->setAuthentication('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');
 defined( 'ABSPATH' ) || exit;
 
 // Rocket defines.
